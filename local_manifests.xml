@@ -3,13 +3,16 @@
 
         <!-- Remote -->
         <remote name="mobxCode" fetch="https://github.com/mobxCode" />
-
+        <remote name="kdrag0n" fetch="https://github.com/kdrag0n" />
+        <remote name="greenforce-project" fetch="https://github.com/greenforce-project" />
+        <remote  name="mobx-lab" fetch="https://gitlab.com/mobxCode" revision="refs/heads/lineage-19.1" />
+        
         <!-- Trees -->
-        <project path="device/xiaomi/juice" name="device_tree" remote="mobxCode" revision="12.0" clone-depth="1" />
-        <project path="vendor/xiaomi/juice" name="vendor_tree" remote="mobxCode" revision="12.0" clone-depth="1" />
-        <project path="kernel/xiaomi/juice" name="kernel_tree" remote="mobxCode" revision="11.0" clone-depth="1" />
+        <project path="device/xiaomi/chime" name="device_xiaomi_chime" remote="mobxCode" revision="12.1" clone-depth="1" />
+        <project path="vendor/xiaomi/chime" name="vendor_xiaomi_chime" clone-depth="1" remote="mobx-lab" />
+        <project path="kernel/xiaomi/chime" name="kernel_xiaomi_citrus_sm6115" remote="greenforce-project" revision="main" clone-depth="1" />
         
         <!-- Clang -->
-        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="mobxCode" revision="master" clone-depth="1" />
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kdrag0n " revision="master" clone-depth="1" />
  
 </manifest>
